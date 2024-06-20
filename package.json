@@ -1,0 +1,52 @@
+{
+  "name": "github-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "public/main.js",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "axios": "^1.7.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "simple-git": "^3.25.0",
+    "vite": "^5.3.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "electron:start": "electron .",
+    "start": "concurrently \"npm run dev\" \"npm run electron:start\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^31.0.1",
+    "electron-is-dev": "^3.0.1",
+    "electron-packager": "^17.1.2",
+    "wait-on": "^7.2.0"
+  }
+}
